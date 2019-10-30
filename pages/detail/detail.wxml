@@ -1,0 +1,30 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="main" >
+       <image src='{{detailObj.detail_img}}'/>
+       <image catchtap='handleMusic' class="musics" src='{{!isMusic?"/images/music/music-stop.png":"/images/music/music-start.png"}}'></image>
+  </view>
+ 
+   <view class="auther">
+     <image src='{{detailObj.avatar}}'/>
+     <text>{{detailObj.author}}</text>
+     <text>{{detailObj.date}}</text>
+    
+   </view>
+     <view class="title"> 
+        <text>{{detailObj.title}}</text>
+     </view>
+  
+   <view class='line'></view>
+   <view class="collection">
+     <image catchtap='handleCollection' wx:if='{{!isCollection}}' src='/images/icon/collection-anti.png'/>
+      <image catchtap='handleCollection' wx:if='{{isCollection}}' src='/images/icon/collection.png'/>
+     
+      <image src='/images/icon/share.png' catchtap='handleShare'/>
+   </view>
+   <button open-type="share">转发此文章</button>
+   <view>
+    <text class="content">{{detailObj.detail_content}}</text>
+   </view>
+   
+</view>

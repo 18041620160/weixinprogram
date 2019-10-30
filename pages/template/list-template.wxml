@@ -1,0 +1,23 @@
+<!--pages/template/list-template.wxml-->
+<template name='list'>
+  <view class="lists">
+   <view class='avatar-1'>
+      <image src="{{avatar}}"></image> 
+      <text>{{date}}</text>
+   </view>
+   <text class='title'>{{title}}</text>
+   <view class='main'>
+      <image src='{{detail_img}}'/>
+      <view class='contents'>
+      {{detail_content}}
+      </view>
+   </view>
+   <view class='collection'>
+      <image src='/images/icon/star.png'/>
+      <text>{{love_count}}</text>
+      <image class="views" src='/images/icon/view.png'/>
+      <text>{{attention_count}}</text>
+   </view>
+  </view>
+   
+</template>

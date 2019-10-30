@@ -1,0 +1,41 @@
+/* pages/template/list-template.wxss */
+.lists{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2rpx solid #eee;
+  margin: 40rpx 0;
+    }
+  .avatar-1 image{
+     width:100rpx;
+     height: 100rpx;
+     vertical-align: middle;
+  }
+  .avatar-1 text{
+    font-size: 40rpx;
+   
+  }
+  .title{
+    font-weight: bold;
+    font-size:60rpx;
+  }
+ 
+  .main text{
+    font-size: 30rpx;
+    color:gray;
+   
+ 
+  }
+  .contents{
+    text-indent:2em;
+    font-size:40rpx;
+    color:gray;
+  }
+  .collection image{
+    width:20rpx;
+    height: 20px;
+  }
+  .collection .views{
+    margin-left:30rpx;
+  }
+ 
+ 

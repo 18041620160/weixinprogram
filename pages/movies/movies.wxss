@@ -1,0 +1,35 @@
+/* pages/movies/movies.wxss */
+.container{
+  display: flex;
+    background: whitesmoke;
+    border-bottom: 1px solid gray;
+    padding-bottom:30rpx;
+  
+}
+.container image{
+  width:128rpx;
+  height: 128rpx;
+
+ 
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  font-size:34rpx;
+  color:gray;
+  margin-left:30rpx;
+  width:70%;
+    
+}
+.content .name{
+  color:black;
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.review{
+  color:red;
+  font-size:50rpx;
+  
+
+}
